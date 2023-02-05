@@ -1,0 +1,40 @@
+@import "./modules/login";
+@import "./modules/nav";
+@import "./modules/sidenav";
+@import "./modules/dashboard";
+@import "./modules/filtermenu";
+@import "./modules/singleUser";
+
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next";
+  overflow-x: hidden;
+}
+
+.container {
+  background: #ffffff;
+  width: 100%;
+  // width: 1440px;
+  // display: grid;
+  // grid-template-columns: auto 704px;
+  // color: white;
+  // padding: 106px 157px 281.43px 67px;
+  // padding: 106px 157px 0px 67px;
+  overflow-x: hidden;
+}
+
+.content {
+  // display: flex;
+  display: grid;
+  grid-template-columns: 283px auto;
+  @media (max-width: 1000px) {
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+}

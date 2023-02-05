@@ -1,0 +1,112 @@
+.sidenav {
+  position: relative;
+  font-family: "Work Sans";
+  // width: 283px;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  // border: 2px solid red;
+  min-height: 100vh;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
+  & .organisation {
+    margin-top: 39px;
+    margin-bottom: 42px;
+    // border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 10px;
+    cursor: pointer;
+
+    & p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #213f7d;
+    }
+  }
+
+  & .sidenav-item {
+    display: flex;
+    gap: 10px;
+    // border: 2px solid brown;
+    align-items: center;
+    padding-left: 30px;
+    height: 40px;
+    cursor: pointer;
+    // justify-content: center;
+
+    & .icon {
+      display: flex;
+      align-items: center;
+      opacity: 0.6;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      //   color: #213f7d;
+      color: rgba(33, 63, 125, 0.6);
+
+      //   opacity: 0.6;
+      text-transform: capitalize;
+    }
+  }
+
+  & .active {
+    // opacity: 1;
+    // color: #213f7d;
+
+    background: rgba(57, 205, 204, 0.1);
+    border-left: 3px solid #39cdcc;
+
+    & .icon {
+      opacity: 1;
+    }
+
+    & p {
+      color: #213f7d;
+    }
+  }
+
+  & .sidenav-group {
+    margin-top: 41px;
+    // border: 2px solid brown;
+
+    & .heading {
+      padding-left: 30px;
+      margin-bottom: 10px;
+
+      & p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #545f7d;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  & hr {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  & .sign-out {
+    text-decoration: none;
+  }
+
+  & .version {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #213f7d;
+    padding-left: 29px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+  }
+}
