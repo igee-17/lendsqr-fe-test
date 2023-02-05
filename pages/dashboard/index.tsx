@@ -12,15 +12,20 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      users: paginate(data),
+      // users: paginate(data),
+      users: data,
     },
   };
 };
 
-const DashboardPage = ({ users }) => (
-  <Layout title="Dashboard">
-    <DashboardContent users={users} />
-  </Layout>
-);
+const DashboardPage = ({ users }) => {
+  const newUsers = paginate(users);
+
+  return (
+    <Layout title="Dashboard">
+      <DashboardContent users={newUsers} />
+    </Layout>
+  );
+};
 
 export default DashboardPage;
