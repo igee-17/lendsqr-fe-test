@@ -1,16 +1,8 @@
 import React, { ReactNode } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { logo, person } from "../assets/images";
-import {
-  searchIcon,
-  notification,
-  bell,
-  avatar,
-  dropdownSmall,
-  notifcationNew,
-} from "../assets/icons";
+import { searchIcon, dropdownSmall, notifcationNew } from "../assets/icons";
 import SideNav from "./SideNav";
 
 type Props = {
@@ -18,6 +10,8 @@ type Props = {
   title?: string;
 };
 
+// console.log(logo);
+// const
 const Layout = ({ children, title = "This is the default title" }: Props) => (
   <div>
     <Head>

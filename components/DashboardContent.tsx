@@ -180,7 +180,9 @@ const DashboardContent = ({ users }) => {
               start = page + index + 1;
               if (start > 12) return;
               return (
-                <button onClick={() => handlePage(start - 1)}>{start}</button>
+                <button key={index} onClick={() => handlePage(start - 1)}>
+                  {start}
+                </button>
               );
             })}
             {/* {(users.length-page <== 5) &&<p>...</p>} */}
@@ -192,7 +194,9 @@ const DashboardContent = ({ users }) => {
                 start = index;
 
                 return (
-                  <button onClick={() => handlePage(start)}>{start + 1}</button>
+                  <button key={index} onClick={() => handlePage(start)}>
+                    {start + 1}
+                  </button>
                 );
               })}
 
